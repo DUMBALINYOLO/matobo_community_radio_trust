@@ -91,7 +91,7 @@ const Header = (props) => {
               component={Link}
               to='/services'
             >
-              <span style={{color: '#8C5148'}}>OUR SERVICES</span>
+              <span style={{color: '#8C5148'}}>OUR PROJECTS</span>
             </Button>
 
           </div>
@@ -153,7 +153,7 @@ const Header = (props) => {
                   component={Link}
                   to='/services'
                 >
-                  OUR SERVICES
+                  OUR PROJECTS
               </Button>
             </ListItem>
             <Divider />
