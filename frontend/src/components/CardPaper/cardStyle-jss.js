@@ -109,6 +109,7 @@ const styles = theme => ({
   title: {
     fontSize: 20,
     height: 30,
+    color: 'green',
     fontWeight: theme.typography.fontWeightMedium
   },
   ratting: {

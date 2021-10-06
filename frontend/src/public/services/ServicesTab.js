@@ -6,11 +6,11 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import Corporate from '../../containers/Templates/Operate';
+import Corporate from '../../containers/Templates/Corporate';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import Services from './Services';
-import { getServices } from '../../actions/services';
+import { getProjects } from '../../actions/services';
 
 
 
@@ -44,13 +44,6 @@ const ScrollIconTabs = (props) => {
     const [value, setValue] = useState(0)
     const { classes } = props;
     const {records} = props;
-    const energy = records.filter(record => record.category === 'energy')
-    const hydrogen = records.filter(record => record.category === 'hydrogen')
-    const fertilizer = records.filter(record => record.category === 'fertilizer')
-    const precision = records.filter(record => record.category === 'precision')
-    const tracking = records.filter(record => record.category === 'tracking')
-    const precast = records.filter(record => record.category === 'precast')
-    const prefabricated = records.filter(record => record.category === 'prefabricated')
 
     useEffect(() => {
         AOS.init({ duration: 2000 })
@@ -59,7 +52,7 @@ const ScrollIconTabs = (props) => {
 
     useEffect(() => {
         if(!props.fetched) {
-            props.getServices();
+            props.getProjects();
         }
         console.log('mount it!');
     
@@ -83,22 +76,12 @@ const ScrollIconTabs = (props) => {
                         textColor="secondary"
                         className={classes.tabs}
                     >
-                        <Tab label="RENEWABLE ENERGY" />
-                        <Tab label="HYDROGEN & AMONIA PRODUCTION" />
-                        <Tab label="FERTILIZER MANUFACTURING" />
-                        <Tab label="PRECISION AGRICULTURE & AUTOMATION" />
-                        <Tab label="TRACKING & ASSET MANAGEMENT SYSTEMS" />
-                        <Tab label="PRE CAST CONCRETE" />
-                        <Tab label="PREFABRICATED BUILDINGS" />
+                        <Tab label="PROJECTS" />
+
                     </Tabs>
                 </AppBar>
-                {value === 0 && <TabContainer><Services records={energy}/></TabContainer>}
-                {value === 1 && <TabContainer><Services records={hydrogen}/></TabContainer>}
-                {value === 2 && <TabContainer><Services records={fertilizer}/></TabContainer>}
-                {value === 3 && <TabContainer><Services records={precision}/></TabContainer>}
-                {value === 4 && <TabContainer><Services records={tracking}/></TabContainer>}
-                {value === 5 && <TabContainer><Services records={precast}/></TabContainer>}
-                {value === 6 && <TabContainer><Services records={prefabricated}/></TabContainer>}
+                {value === 0 && <TabContainer><Services records={records}/></TabContainer>}
+                
             </div>
         </Corporate>
     );
@@ -109,12 +92,12 @@ ScrollIconTabs.propTypes = {
 };
 
 const mapStateToProps = state =>({
-    records: state.services.services,
+    records: state.services.projects,
   })
   
 const MappedServices = connect(
   mapStateToProps,
-  {getServices} )
+  {getProjects} )
   (ScrollIconTabs);
 
   export default withStyles(styles)(MappedServices);

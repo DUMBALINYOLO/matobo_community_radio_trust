@@ -48,7 +48,7 @@ const Services = props => {
   }
 
   const handleClick = id =>{
-    history.push(`/services/${id}`)
+    history.push(`/projects/${id}`)
   }
 
 
@@ -80,7 +80,7 @@ const Services = props => {
                         <ServiceCard
                           list={listView === 'list'}
                           full_name={service.name}
-                          thumbnail={service.photo}
+                          thumbnail={service.image}
                           detailOpen={() => handleClick(service.id)}
                         />
                       </Grid>

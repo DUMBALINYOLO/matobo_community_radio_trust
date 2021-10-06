@@ -1,6 +1,6 @@
 import React, {  useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import Corporate from '../../containers/Templates/Operate';
+import Corporate from '../../containers/Templates/Corporate';
 import clsx from 'clsx';
 import {
   Grid,
@@ -11,9 +11,6 @@ import {
   Tab,
   Card,
   CardContent,
-  IconButton,
-  Checkbox,
-  Divider
 
 
 } from '@material-ui/core';
@@ -21,9 +18,9 @@ import { withStyles } from '@material-ui/core/styles';
 import {connect} from 'react-redux';
 
 import {
-  getService,
+  getProject,
   getImages,
-  getProjects
+
 } from '../../actions/services';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import 'react-perfect-scrollbar/dist/css/styles.css';
@@ -35,10 +32,10 @@ const styles = theme => ({
     flexGrow: 1,
     width: '100%',
     backgroundColor: 'primary',
-    paddingTop: '30px',
+    paddingTop: '70px',
     paddingLeft: '40px',
     paddingRight: '20px',
-    paddingBottom: '20px',
+    paddingBottom: '0px',
   },
 });
 
@@ -67,7 +64,6 @@ const Service = (props) => {
     classes,
     service,
     images,
-    projects,
   } = props;
   const [value, setValue] = React.useState(0);
   const [isSidebarMenuOpen2, setIsSidebarMenuOpen2] = useState(false);
@@ -76,9 +72,8 @@ const Service = (props) => {
 
   useEffect(() => {
     if(!props.fetched) {
-      props.getService(props.match.params.id);
       props.getImages(props.match.params.id);
-      props.getProjects(props.match.params.id);
+      props.getProject(props.match.params.id);
     }
     console.log('mount it!');
 
@@ -102,7 +97,7 @@ const Service = (props) => {
                 <Card className="mb-4">
                   <div className="card-badges">
                     <span className="h-auto px-3 py-1 badge badge-warning badge-pill">
-                      TUNNEL LIGHT
+                      MATOBO COMMUNITY RADIO TRUST
                     </span>
                   </div>
                   <a
@@ -117,7 +112,7 @@ const Service = (props) => {
                     </div>
                     <img
                       alt="..." className="card-img-top"
-                      src={service.photo}
+                      src={service.image}
                       style={{height: '400px'}}
                     />
                   </a>
@@ -134,7 +129,6 @@ const Service = (props) => {
               onChange={handleChange}>
               <Tab label="DESCRIPTION" />
               <Tab label="IMAGES" />
-              <Tab label="PROJECTS" />
             </Tabs>
             <TabPanel value={value} index={0}>
               <Grid style={{paddingTop: '20px'}} container spacing={4} data-aos="zoom-in-up">
@@ -185,79 +179,7 @@ const Service = (props) => {
               />
 
             </TabPanel>
-            <TabPanel value={value} index={2}>
-              <Card className="card-box p-2 mb-4" data-aos="zoom-in-up">
-                <div className="table-responsive">
-                  <table className="table table-striped table-hover table-bordered text-nowrap mb-0">
-                    <thead className="thead-light">
-                      <tr>
-                        <th className="text-center" style={{ width: '5%' }}></th>
-                        <th>TITLE</th>
-                        <th>DATE</th>
-                        <th className="text-center" style={{ width: '20%' }}>
-                          STATUS
-                        </th>
-                        <th>LOCATION</th>
-                        <th className="text-center">URL LINK</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      { projects.map((project) => {
-                          return (
-                            <tr data-aos="zoom-in-up" key={project.id}>
-                              <td className="text-center" >
-                                <Checkbox
-                                  id="CustomCheckbox5"
-                                  className="align-self-start"
-                                />
-                              </td>
-                              <td>
-                                <div className="d-flex align-items-center">
-
-                                  <div>
-                                    <span className=" d-block">
-                                      {project.title}
-                                    </span>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>
-                                <div className="align-box-row text-danger">
-                                  <div className="text-info ml-2 badge badge-neutral-info">
-                                    {project.date}
-                                  </div>
-                                </div>
-                              </td>
-                              <td className="text-center">
-                                <div className="badge badge-success h-auto py-0 px-3">
-                                  ONGOING
-                                </div>
-                              </td>
-                              <td>
-                                <div className="d-flex align-items-center">
-
-                                  <div>
-                                    <span className=" d-block">
-                                      {project.location}
-                                    </span>
-                                  </div>
-                                </div>
-                              </td>
-                              <td className="text-center">
-                                <IconButton size="small" color="primary">
-                                  {project.url_link}
-                                </IconButton>
-                              </td>
-                            </tr>
-                            );
-                          })
-                      }
-                    </tbody>
-                  </table>
-                </div>
-                <Divider />
-              </Card>
-            </TabPanel>
+            
           </Grid>
         </Grid>
         <div className="sidebar-inner-layout-overlay" />
@@ -267,14 +189,14 @@ const Service = (props) => {
 };
 
 const mapStateToProps = state =>({
-  service: state.services.service,
+  service: state.services.project,
   images: state.services.images,
   projects: state.services.projects,
 })
 
 const MappedServices = connect(
 mapStateToProps,
-{getService, getImages, getProjects} )
+{ getImages, getProject} )
 (Service);
 
 

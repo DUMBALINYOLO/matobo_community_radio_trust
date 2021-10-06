@@ -51,4 +51,4 @@ class Image(models.Model):
 
 
     def __str__(self):
-        return self.project.name
+        return str(self.id)

@@ -19,13 +19,13 @@ export default function LivePreviewExample() {
       <div className="feature-box py-5" data-aos="flip-left">
         <Container className="py-5">
           <Grid item xl={7} md={9} className="px-0">
-            <h1 className="display-3 mb-3 font-weight-bold" style={{textAlign: 'center', color: '#488C6B'}}>
-              HLETIPANG VISION
+            <h1 className="display-3 mb-3 font-weight-bold" style={{textAlign: 'center', color: '#689F38'}}>
+              OUR VISION
             </h1>
-            <p className="font-size-lg " style={{textAlign: 'center', color: '#488C6B'}}>
-                To be key be a key player in sustainable energy, asset management,
-                fertilizer manufactuing, precision agriculture, precast concrete &
-                 prefrabricated buildings throughout Africa
+            <p className="font-size-lg " style={{textAlign: 'center', color: 'gold'}}>
+              To promote various areas of development for our
+              community, issues affecting various groups, promoting our culture,
+               local community and national news and entertaining our listeners
             </p>
           </Grid>
           <Grid container spacing={4}>
@@ -34,19 +34,12 @@ export default function LivePreviewExample() {
                 <div className="d-block pl-0 pl-xl-3 mt-4">
                   <div className="feature-box mb-4 pr-4">
                     <h3 className="font-size-lg font-weight-bold my-3">
-                    <h1 className="display-3 mb-3 font-weight-bold" style={{textAlign: 'center', color: '#488C6B'}}>
-                        HLETIPANG MISSION
+                    <h1 className="display-3 mb-3 font-weight-bold" style={{textAlign: 'center', color: '#689F38'}}>
+                        OUR MISSION
                     </h1>
                     </h3>
-                    <p className=" mb-3" style={{textAlign: 'center', color: '#488C6B'}}>
-                        We work hard every day to make Hletipang Africa's most reliable brand in technology,
-                        energy, asset management & renewable energy
-                        <br/>
-                        To give customers the most compelling services
-                        <br/>
-                        Build the best products, cause no unnecessary harm, use business to inspire and implement
-                        solutions to our clientele problems
-
+                    <p className=" mb-3" style={{textAlign: 'center', color: 'gold'}}>
+                        TO REACH OUT TO OUR COMMUNITIES
                     </p>
                   </div>
 

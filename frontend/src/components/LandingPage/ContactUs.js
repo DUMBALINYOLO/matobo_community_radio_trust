@@ -67,12 +67,9 @@ class Contact extends React.Component {
                 <div className={classes.contactBubble}>
                     <Title title="Make an Enquiry" align="left" nomargin />
                     <Typography component="p" className={classes.contactText}>
-                      48A G. SILUNDIKA STREET
-                      BETWEEN 3rd & 4th Avenues
-                      Bulawayo, Zimbabwe
-                      Tel: +263 965796, 884866/5, 67047
-                      Fax: 2639884868, 884867
-                      Email: info@flexible.co.zw
+                      Adress Suite 2, Astra Complex, 9th Ave, Bulawayo
+                      0785999229
+                      Matobo.trust@gmail.com
                     </Typography>
                 <form onSubmit={this.onSubmit}>
                     <Grid container spacing={3}>

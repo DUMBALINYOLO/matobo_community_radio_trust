@@ -40,7 +40,7 @@ class ShowcaseCard extends React.Component {
         <CardContent>
           <Typography noWrap variant="h5">{title}</Typography>
           {date && (<Typography variant="caption" gutterBottom>{date}</Typography>)}
-          <Typography variant="subtitle1">{desc}</Typography>
+          <Typography style={{color: 'gold'}} variant="subtitle1">{desc}</Typography>
           {landscape && (
             <div className={classes.btnArea}>
               <Button size="large" component={Link} to={href} variant="outlined" color="primary">{action}</Button>

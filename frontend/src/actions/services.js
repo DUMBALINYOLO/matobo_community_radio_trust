@@ -3,7 +3,7 @@ import {
     GET_SERVICES,
     GET_SERVICE,
     GET_PROJECTS,
-    ADD_PROJECT,
+    GET_PROJECT,
     GET_IMAGES,
     ADD_IMAGE,
 } from '../types/serviceTypes';
@@ -36,14 +36,27 @@ export const getService = id => dispatch =>{
         }).catch(err => console.log(err))
 }
 
-export const getProjects = (id) => dispatch => {
-    axios.get(`${projectsURL}?id=${id}`)
+export const getProjects = () => dispatch => {
+    axios.get(projectsURL)
         .then(res => {
             dispatch({
                 type: GET_PROJECTS,
                 payload: res.data
             });
         }).catch(err => console.log(err))
+}
+
+
+
+//get
+export const getProject = id => dispatch =>{
+    axios.get(`${projectsURL}${id}/`)
+      .then(res => {
+          dispatch({
+              type: GET_PROJECT,
+              payload: res.data
+          });
+      }).catch(err => console.log(err))
 }
 
 export const getImages = (id) => dispatch => {

@@ -7,7 +7,9 @@ import errors from './errors';
 import staffusers from './staffusers';
 import blogs from './blogs';
 import theme from './theme'
-import messaging from './messaging'
+import messaging from './messaging';
+import donations from './donations';
+import memberships from './memberships';
 
 
 
@@ -23,5 +25,7 @@ export default combineReducers({
     blogs,
     staffusers,
     theme,
+    memberships,
+    donations,
 });
 

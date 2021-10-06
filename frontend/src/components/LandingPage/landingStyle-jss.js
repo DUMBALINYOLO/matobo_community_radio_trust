@@ -1,14 +1,14 @@
 import { gradientBgLight, gradientBgDark } from '../../containers/Templates/appStyles-jss';
 import { fade, darken } from '@material-ui/core/styles/colorManipulator';
-import controlScreen from '../../images/screen/control_screen.png';
-import line1 from '../../images/decoration/line1.png';
-import line2 from '../../images/decoration/line2.png';
-import petal1 from '../../images/decoration/petal1.png';
-import petal2 from '../../images/decoration/petal2.png';
-import bgFooterDark from '../../images/decoration/bgFooterDark.svg';
-import bgFooterLight from '../../images/decoration/bgFooterLight.svg';
-import petalHeaderLight from '../../images/decoration_light.svg';
-import petalHeaderDark from '../../images/decoration_dark.svg';
+import controlScreen from '../../api/images/screen/control_screen.png';
+import line1 from '../../api/images/decoration/line1.png';
+import line2 from '../../api/images/decoration/line2.png';
+import petal1 from '../../api/images/decoration/petal1.png';
+import petal2 from '../../api/images/decoration/petal2.png';
+import bgFooterDark from '../../api/images/decoration/bgFooterDark.svg';
+import bgFooterLight from '../../api/images/decoration/bgFooterLight.svg';
+import petalHeaderLight from '../../api/images/decoration_light.svg';
+import petalHeaderDark from '../../api/images/decoration_dark.svg';
 
 
 const sectionSpace = 96;
@@ -670,7 +670,6 @@ const styles = theme => ({
     color: '#B7A82E',
   },
   withBg: {},
-
   contact: {
     paddingTop: sectionSpace,
     [theme.breakpoints.down('sm')]: {
@@ -679,7 +678,7 @@ const styles = theme => ({
     '&$withBg': {
       backgroundImage: theme.palette.type === 'dark' ? `url(${bgFooterDark})` : `url(${bgFooterLight})`,
       backgroundRepeat: 'no-repeat',
-      backgroundColor: theme.palette.type === 'dark' ? '#488C6B' : theme.palette.primary.light,
+      backgroundColor: theme.palette.type === 'dark' ? darken(theme.palette.primary.main, 0.7) : theme.palette.primary.light,
       backgroundPosition: 'center -240px',
       backgroundSize: '110%',
     }

@@ -46,11 +46,11 @@ const About =(props) => {
 
         <ExpansionPanel className='card-box-hover-rise-alt' style={{color: 'gold'}} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>COMPANY NAME</Typography>
+            <Typography className={classes.heading}>ORGANIZATION NAME</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-                HLETIPANG
+                MATOBO COMMUNITY RADIO TRUST
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -62,28 +62,13 @@ const About =(props) => {
           <ExpansionPanelDetails>
             <Typography>
               <p>
-                21 MAY 2018
+                2020 
 
               </p>
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
-        <ExpansionPanel style={{color: 'gold'}} className=' card-box-hover-rise-alt' expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>MAIN BUSINESS</Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <Typography>
-              <p>
-                FERTILIZER MANUFACTURING, PRECISION AGRICULTUE & AUTOMATION,
-                PRECAST CONCRETE, PREFABRICATED BUILDINGS, ASSET MANAGEMENT & TRACKING,
-                RENEWABLE ENERGY SYSTEMS & HYDROGEN & AMOMONIA PRODUCTION
-
-
-              </p>
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+        
         <ExpansionPanel style={{color: 'gold'}} className='card-box-hover-rise-alt' expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
             <Typography className={classes.heading}>BUSINESS ADDRESS</Typography>
@@ -91,9 +76,7 @@ const About =(props) => {
           <ExpansionPanelDetails>
             <Typography>
               <p>
-                48A G. SILUNDIKA STREET
-                BETWEEN 3rd & 4th Avenues
-                Bulawayo, Zimbabwe
+                Adress Suite 2, Astra Complex, 9th Ave, Bulawayo
               </p>
             </Typography>
           </ExpansionPanelDetails>
@@ -104,9 +87,7 @@ const About =(props) => {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-                48A G. SILUNDIKA STREET
-                BETWEEN 3rd & 4th Avenues
-                Bulawayo, Zimbabwe
+              Adress Suite 2, Astra Complex, 9th Ave, Bulawayo
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -116,40 +97,22 @@ const About =(props) => {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-                +263 965796, 884866/5, 67047, +263 772801161, +263712622438
+              0785999229
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
-        <ExpansionPanel style={{color: 'gold'}} className='card-box-hover-rise-alt' expanded={expanded === 'panel9'} onChange={handleChange('panel9')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>FAX</Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <Typography>
-              2639884868, 884867
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+        
         <ExpansionPanel style={{color: 'gold'}} className='card-box-hover-rise-alt' expanded={expanded === 'panel10'} onChange={handleChange('panel9')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
             <Typography className={classes.heading}>EMAIL</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              info@flexible.co.zw, psithole@flexible.co.zw
+              Matobo.trust@gmail.com
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
-        <ExpansionPanel style={{color: 'gold'}} className='card-box-hover-rise-alt' expanded={expanded === 'panel11'} onChange={handleChange('panel9')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography className={classes.heading}>SKYPE</Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <Typography>
-              hletipang
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
+        
       </Paper>
   );
 }

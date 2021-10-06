@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'membership',
     'projects',
     'messaging',
+    'donations',
     'rest_framework',
     'knox',
     "corsheaders",

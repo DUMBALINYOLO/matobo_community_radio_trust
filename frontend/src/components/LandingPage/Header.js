@@ -59,9 +59,9 @@ const Header = (props) => {
                 className=" px-4 py-2 text-capitalize"
                 component={Link}
                 to='/'
+                label='MATOBO COMMUNITY RADIO TRUST'
 
               >
-                <span style={{color: '#8C5148'}}>MATOBO COMMUNITY RADIO TRUST</span>
             </Button>
 
           </div>

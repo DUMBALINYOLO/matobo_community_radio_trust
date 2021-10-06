@@ -1,138 +1,135 @@
-import React, { Fragment, useEffect } from 'react';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { Grid, Container, Button, List, ListItem } from '@material-ui/core';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
-import AOS from "aos";
-import 'aos/dist/aos.css';
+import IconButton from '@material-ui/core/IconButton';
+import logo from './mcrt.jpg';
+import brand from '../../api/dummy/brand';
+import link from '../../api/ui/link';
 
+import styles from './landingStyle-jss';
 
-export default function LivePreviewExample() {
+let counter = 0;
+function createData(name, url) {
+  counter += 1;
+  return {
+    id: counter,
+    name,
+    url,
+  };
+}
 
-  useEffect(() =>{
-    AOS.init({duration : 2000})
-
-  }, []);
-
-
+function Decoration(props) {
+  const { classes } = props;
   return (
-    <Fragment>
-      <div className="py-5" data-aos="fade-right">
-        <Container className="py-5">
-          <Grid container spacing={4} className="text-center text-xl-left">
-            <Grid item xs={12} lg={5} className="d-flex align-items-center">
-              <div className="mb-5 mb-xl-0 w-100">
-                <div
-                  className="nav-logo bg-light rounded-sm d-50 mx-auto mx-xl-0"
-                  title="Welcome Flexible Measurements & Control Systems 😀">
-                  <a
-                    href="#/"
-                    onClick={e => e.preventDefault()}
-                    className="d-block"
-                    title="Flexible Measurements & Control Systems">
-                    <i className="m-0 d-50">
-
-                    </i>
-                  </a>
-                </div>
-                <p className="text-black-50 font-size-lg my-3">
-                  GROW YOUR BUSINESS WITH US
-                </p>
-                <div className="divider border-1 rounded-circle border-dark bg-dark opacity-2 mx-auto mx-xl-0 mb-4 w-25" />
-                <div className="d-flex justify-content-center justify-content-xl-start">
-                  <Button
-                    variant="outlined"
-                    className="text-facebook py-2 px-2 mr-3"
-                    href="#/"
-                    onClick={e => e.preventDefault()}>
-                    <FontAwesomeIcon
-                      icon={['fab', 'facebook']}
-                      className="font-size-lg"
-                    />
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    className="text-twitter py-2 px-2 mr-3"
-                    href="#/"
-                    onClick={e => e.preventDefault()}>
-                    <FontAwesomeIcon
-                      icon={['fab', 'twitter']}
-                      className="font-size-lg"
-                    />
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    className="text-google py-2 px-2 mr-3"
-                    href="#/"
-                    onClick={e => e.preventDefault()}>
-                    <FontAwesomeIcon
-                      icon={['fab', 'google']}
-                      className="font-size-lg"
-                    />
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    className="text-instagram py-2 px-2"
-                    href="#/"
-                    onClick={e => e.preventDefault()}>
-                    <FontAwesomeIcon
-                      icon={['fab', 'instagram']}
-                      className="font-size-lg"
-                    />
-                  </Button>
-                </div>
-              </div>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              lg={7}
-              className="d-none d-md-flex align-items-center">
-              <Grid container spacing={4} className="w-100">
-                <Grid item xs={12} md={4}>
-                  <div className="divider-v divider-v-lg opacity-1 d-none d-xl-block" />
-                  <div className="pl-3">
-                  <Button
-                      color="inherit"
-                      component={Link}
-                      to='/services'
-                      className=" px-4 py-2 text-capitalize">
-                      OUR SERVICES
-                    </Button>
-
-                  </div>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <div className="pl-3">
-                    <Button
-                      color="inherit"
-                      component={Link}
-                      to='/about'
-                      className=" px-4 py-2 text-capitalize">
-                      ABOUT US
-                    </Button>
-
-                  </div>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Button
-                      color="inherit"
-                      component={Link}
-                      to='/newsletter'
-                      className=" px-4 py-2 text-capitalize">
-                      NEWSLETTER
-                    </Button>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
-          <div className="divider border-1 d-none d-md-block rounded-circle border-dark bg-dark opacity-2 mx-auto my-5 w-25" />
-          <div className="text-center d-block text-black-50">
-            Copyright &copy; {new Date().getFullYear()} Matobo Community Radio Trust
-          </div>
-        </Container>
-      </div>
-    </Fragment>
+    <div>
+      <svg fill="#fff" className={classes.footerDecoration}>
+        <use xlinkHref="/images/decoration/petal5.svg#Petal-Bottom" />
+      </svg>
+    </div>
   );
 }
+
+Decoration.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+const DecorationStyled = withStyles(styles)(Decoration);
+
+class Footer extends React.Component {
+  state = {
+    menuList: [
+      createData('feature', '#feature'),
+      createData('showcase', '#showcase'),
+      createData('testimonials', '#testi'),
+      createData('technology', '#tech'),
+      createData('our belief', '#pricing'),
+      createData('contact', '#contact'),
+    ]
+  }
+
+  render() {
+    const { menuList } = this.state;
+    const { classes } = this.props;
+    return (
+      <footer className={classes.footer}>
+        <DecorationStyled />
+        <div className={classes.container}>
+          <div className={classes.spaceContainer}>
+            <div className={classes.brand}>
+              <img src={logo} alt={brand.name} />
+                <span style={{color: '#689F38'}}>MATOBO COMMUNITY RADIO TRUST</span>
+            </div>
+            <nav>
+            <Button
+                    color="inherit"
+                    className=" px-4 py-2 text-capitalize"
+                    component={Link}
+                    to='/about'
+                  >
+                    <span style={{color: '#689F38'}}>ABOUT US</span>
+                  </Button>
+                  <Button
+                    color="inherit"
+                    className=" px-4 py-2 text-capitalize"
+                    component={Link}
+                    to='/donations'
+                  >
+                    <span style={{color: '#689F38'}}>DONATIONS</span>
+                  </Button>
+                  <Button
+                    color="inherit"
+                    className=" px-4 py-2 text-capitalize"
+                    component={Link}
+                    to='/memberships'
+                  >
+                    <span style={{color: '#689F38'}}>MEMBERSHIPS</span>
+                  </Button>
+                  <Button
+                    color="inherit"
+                    className=" px-4 py-2 text-capitalize"
+                    component={Link}
+                    to='/projects'
+                  >
+                    <span style={{color: '#689F38'}}>OUR PROJECTS</span>
+                  </Button>
+                  <Button
+                    color="inherit"
+                    className=" px-4 py-2 text-capitalize"
+                    component={Link}
+                    to='/projects'
+                  >
+                    <span style={{color: '#689F38'}}>VOLUNTEER</span>
+                  </Button>
+                  <Button
+                    color="inherit"
+                    className=" px-4 py-2 text-capitalize"
+                    component={Link}
+                    to='/volunteer'
+                  >
+                    <span style={{color: '#689F38'}}>CONTACT US</span>
+                  </Button>
+            </nav>
+          </div>
+        </div>
+        <div className={classes.copyright}>
+          <div className={classes.container}>
+            <p>&copy; 2021 MATOBO COMMUNITY RADIO TRUST </p>
+            <p>&copy; developed by @nkolowadumbalinyolo @flexiblemeasurement&controlsystems </p>
+            <span>
+              <IconButton color="primary" className={classes.button} href={link.twitter} target="_blank"><i className="ion-social-twitter" /></IconButton>
+              <IconButton color="primary" className={classes.button} href={link.pinterest} target="_blank"><i className="ion-social-pinterest" /></IconButton>
+            </span>
+          </div>
+        </div>
+      </footer>
+    );
+  }
+}
+
+Footer.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Footer);

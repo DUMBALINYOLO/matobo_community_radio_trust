@@ -243,14 +243,14 @@ module.exports = {
     palette: {
       primary: {
         light: '#DCEDC8',
-        main: '#689F38',
-        dark: '#33691E',
+        main: '#B93245',
+        dark: '#8F1526',
         contrastText: '#fff',
       },
       secondary: {
         light: '#FCE4EC',
-        main: '#EC407A',
-        dark: '#D81B60',
+        main: '#8F1526',
+        dark: '#8F1526',
         contrastText: '#fff',
       },
     },

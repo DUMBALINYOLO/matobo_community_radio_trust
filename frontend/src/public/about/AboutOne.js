@@ -45,23 +45,27 @@ export default function LivePreviewExample() {
         
         <Grid item xs={12} md={6} lg={12}>
           <Card className=" card-box-hover-rise-alt mb-4">
-            <span className="ribbon-angle ribbon-angle--bottom-right ribbon-warning">
-              <small >HLETIPANG</small>
-            </span>
             
             <CardContent className="p-3">
               <h3 className="heading-6 mt-4 mb-3 font-weight-bold" style={{color: 'gold'}}>
-                VISION 
+                MATOBO COMMUNITY RADIO TRUST
               </h3>
               <p className="card-text mb-3" style={{color: 'gold'}}>
-                To be key be a key player in sustainable energy, asset management, 
-                fertilizer manufactuing, precision agriculture, precast concrete &
-                 prefrabricated buildings throughout Africa
+                We are community-based organisation formed in 2020 whose major objective is to establishing and
+                run a community radio station in Matobo, Mangwe and Brunapeg areas of Zimbabwe. We draw our
+                membership mostly from our community. We welcome all organisations and individuals who abide by
+                our constitution to be associate members.
+                In September 2021, the Broadcasting Authority of Zimbabwe awarded a community broadcasting
+                licence to us and we are now working to establish the envisioned radio station, Bayethe FM ‘The Voice
+                from The Hills’
+                Our radio programming will focus on issues promoting various areas of development for our
+                community, issues affecting various groups, promoting our culture, local community and national
+                news and entertaining our listeners.
+                We are self-funded form our own projects run together with our communities. We are non-partisan
+                and non-political.
                 
               </p>
-              <Button color="primary" title="Learn more">
-                <span>Learn more</span>
-              </Button>
+              
             </CardContent>
           </Card>
         </Grid>

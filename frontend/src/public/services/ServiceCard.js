@@ -33,10 +33,6 @@ const AdvertCard =(props) => {
 
     return (
       <Card data-aos="flip-left" style={{color: 'gold'}} className={classNames(classes.cardProduct, 'card-box-hover-rise', isWidthUp('sm', width) && list ? classes.cardList : '')}>
-            <span className="ribbon-angle ribbon-angle--top-right ribbon-warning">
-              <small>HLETIPANG</small>
-            </span>
-            
         <CardMedia
           className={classes.mediaProduct}
 

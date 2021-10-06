@@ -41,11 +41,11 @@ class ImageViewSet(viewsets.ModelViewSet):
     serializer_class = ImageSerializer
 
 
-    def queryset(self, *args, **kwargs):
+    def get_queryset(self, *args, **kwargs):
         queryset = Image.objects.select_related(
                                             'project'
                                         ).order_by('-id')
-        project_id = self.query_params.get('id', None)
+        project_id = self.request.query_params.get('id', None)
 
         if project_id is not None:
             project = get_project(project_id)

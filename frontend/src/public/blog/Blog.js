@@ -5,6 +5,7 @@ import Corporate from '../../containers/Templates/Corporate';
 import { withStyles } from '@material-ui/core/styles';
 import AOS from "aos";
 import 'aos/dist/aos.css';
+
 import {
   getBlog
 } from '../../actions/blogs';

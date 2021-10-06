@@ -11,6 +11,7 @@ export default function LivePreviewExample() {
     <Fragment>
       <div className="feature-section">
         <Container className="pt-5">
+          <h1 style={{color: '#689F38', textAlign: 'center'}}>OBJECTIVES</h1>
           <Grid container spacing={4}>
             <Grid item xs={12} md={4}>
               <div className="feature-box text-center mb-4">
@@ -19,10 +20,9 @@ export default function LivePreviewExample() {
                   className="w-25 mx-auto d-block img-fluid"
                   alt="..."
                 />
-              <h3 className="font-size-lg font-weight-bold my-3" style={{color: '#8C5148'}}>ASSET MANAGEMENT & TRACKING</h3>
-                <p className="mb-3" style={{color: '#488C6B'}}>
-                  We track  custody, location, and maintenance of organizational valued assets from acquisition to
-                  disposal and Improve visibility to lower overheads linked with missing or stolen.
+              <h3 className="font-size-lg font-weight-bold my-3" style={{color: '#689F38'}}>INFORMATION ACCESS</h3>
+                <p className="mb-3" style={{color: 'gold'}}>
+                  To help our our community acces information
                 </p>
                 <Button color="primary" size="small" title="Learn more">
                   <span >Learn more</span>
@@ -36,11 +36,11 @@ export default function LivePreviewExample() {
                   className="w-25 mx-auto d-block img-fluid"
                   alt="..."
                 />
-              <h3 className="font-size-lg font-weight-bold my-3" style={{color: '#8C5148'}}>
-                  RENEWABLE ENERGY SYSTEMS
+              <h3 className="font-size-lg font-weight-bold my-3" style={{color: '#689F38'}}>
+                  ENTERTAINMENT
                 </h3>
-                <p className=" mb-3" style={{color: '#488C6B'}}>
-                  We provide utility services, develop, construct, and operation of offer renewables service solutions to our clients
+                <p className=" mb-3" style={{color: 'gold'}}>
+                  To Entertain our Communities
                 </p>
                 <Button color="primary" size="small" title="Learn more">
                   <span>Learn more</span>
@@ -54,11 +54,9 @@ export default function LivePreviewExample() {
                   className="w-25 mx-auto d-block img-fluid"
                   alt="..."
                 />
-              <h3 className="font-size-lg font-weight-bold my-3" style={{color: '#8C5148'}}>HYDROGEN & AMOMONIA PRODUCTION</h3>
-                <p className=" mb-3" style={{color: '#488C6B'}}>
-                  We intend to be a leading developer of NH3 (ammonia) & H2 (hydrogen) fuel and energy technologies in Africa.
-                  We are setting up systems in place for efficient NH3 (Ammonia) & H2 (hydrogen) fuel conversion systems and related
-                  technologies for automotive and power generation applications.
+              <h3 className="font-size-lg font-weight-bold my-3" style={{color: '#689F38'}}>DEVELOP</h3>
+                <p className=" mb-3" style={{color: 'gold'}}>
+                  To help our communities tackle their development goals
                 </p>
                 <Button color="primary" size="small" title="Learn more">
                   <span>Learn more</span>

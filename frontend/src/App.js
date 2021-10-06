@@ -15,6 +15,9 @@ import Blogs from './public/blog/Blogs';
 import Blog from './public/blog/Blog';
 import Service from './public/services/Service';
 import ContactUs from './components/LandingPage/ContactUs';
+import Volunteer from './public/volunteer/Volunteer';
+import Memberships from './public/memberships/Memberships';
+import Donations from './public/donations/Donations';
 import Error from './errors/Error';
 
 import {
@@ -278,7 +281,7 @@ function App() {
             />
             <Route
               exact
-              path='/services'
+              path='/projects'
               component={PublicServices}
             />
             <Route
@@ -288,7 +291,22 @@ function App() {
             />
             <Route
               exact
-              path='/services/:id'
+              path='/volunteer'
+              component={Volunteer}
+            />
+            <Route
+              exact
+              path='/memberships'
+              component={Memberships}
+            />
+            <Route
+              exact
+              path='/donations'
+              component={Donations}
+            />
+            <Route
+              exact
+              path='/projects/:id'
               component={Service}
             />
             <Route

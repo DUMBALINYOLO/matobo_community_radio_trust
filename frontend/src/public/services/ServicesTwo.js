@@ -9,18 +9,16 @@ export default function LivePreviewExample() {
     <Fragment>
       <div className="feature-section py-3">
         <Container className="pt-5">
+        <h1 style={{color: '#689F38', textAlign: 'center'}}>AREAS OF INTEREST</h1>
           <Grid container spacing={4}>
             <Grid item xs={12} md={6}>
               <div className="feature-box mb-4">
                 <div className="font-size-xxl text-warning rounded-circle">
                     <FontAwesomeIcon icon={['fas', 'thumbs-up']} />
                 </div>
-                <h3 className="font-size-lg font-weight-bold mt-2" style={{color: '#8C5148'}}>FERTILIZER MANUFACTURING</h3>
-                <p className=" mt-3" style={{color: '#488C6B'}}>
-                  The company is putting up in place systems to produce at least 200,000 tonnes of agricultural grade
-                   fertiliser per year.
-                  It has future plans to increase installed capacity while making use of modern and clean technologies to
-                  guarantee food security in Africa .
+                <h3 className="font-size-lg font-weight-bold mt-2" style={{color: '#689F38'}}>NEWS</h3>
+                <p className=" mt-3" style={{color: 'gold'}}>
+                  EQUIPING OUR COMMUNITIES WITH ACCESS TO NEWS 
                 </p>
               </div>
             </Grid>
@@ -29,13 +27,12 @@ export default function LivePreviewExample() {
                 <div className="font-size-xxl text-warning rounded-circle">
                   <FontAwesomeIcon icon={['fas', 'gem']} />
                 </div>
-                <h3 className="font-size-lg font-weight-bold mt-2" style={{color: '#8C5148'}}>
-                  PRECISION AGRICULTUE & AUTOMATION
+                <h3 className="font-size-lg font-weight-bold mt-2" style={{color: '#689F38'}}>
+                  CULTURAL PROMOTION
                 </h3>
-                <p className=" mt-3" style={{color: '#488C6B'}}>
-                  We provide technologies for precision agriculture. We are invested towards offering
-                  our clients technologies commonly used in precision agriculture
-                  applications for crop, root, and soil monitoring etc
+                <p className=" mt-3" style={{color: 'gold'}}>
+                  HELP IN THE CUSTODIANSHIP AND COMMUNICATION THROUGH
+                  OUR CULTURE
                 </p>
               </div>
             </Grid>
@@ -44,12 +41,9 @@ export default function LivePreviewExample() {
                 <div className="font-size-xxl text-warning rounded-circle">
                     <FontAwesomeIcon icon={['fas', 'eye']} />
                 </div>
-                <h3 className="font-size-lg font-weight-bold mt-2" style={{color: '#8C5148'}}>PRECAST CONCRETE</h3>
-                <p className="mt-3" style={{color: '#488C6B'}}>
-                We specialise in manufacturing and supplying of precast concrete
-                products mainly used in civil engineering. We exist to mould precast concrete
-                in a way that address our clients’ needs and deliver it with a professional
-                touch commensurate to our high quality product standards.
+                <h3 className="font-size-lg font-weight-bold mt-2" style={{color: '#689F38'}}>ENTERTAINMENT</h3>
+                <p className="mt-3" style={{color: 'gold'}}>
+                  ENTERTAINING OUR LISTENERS
                 </p>
               </div>
             </Grid>
@@ -58,12 +52,9 @@ export default function LivePreviewExample() {
                 <div className="font-size-xxl text-warning rounded-circle">
                     <FontAwesomeIcon icon={['fas', 'building']} />
                 </div>
-                <h3 className="font-size-lg font-weight-bold mt-2" style={{color: '#8C5148'}}>PREFABRICATED BUILDINGS</h3>
-                <p className=" mt-3" style={{color: '#488C6B'}}>
-                  We are working torwards modular prefab buildings designs and manufactures advanced modular
-                  buildings for a selection of markets including education, schools, classrooms, hospitals,
-                  healthcare, residential and student accommodation, offices,
-                  commercial spaces, medical labs and commercial
+                <h3 className="font-size-lg font-weight-bold mt-2" style={{color: '#689F38'}}>TALENT</h3>
+                <p className=" mt-3" style={{color: 'gold'}}>
+                  SHOWCASING LOCAL TALENT
                 </p>
               </div>
             </Grid>

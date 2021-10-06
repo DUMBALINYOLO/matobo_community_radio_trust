@@ -2,13 +2,15 @@ import {
     GET_PROJECTS,
     GET_IMAGES,
     GET_SERVICE,
-    GET_SERVICES
+    GET_SERVICES,
+    GET_PROJECT
 } from '../types/serviceTypes';
 
 const initialState = {
     services: [],
     service: {},
     projects: [],
+    project: {},
     images: [],
 }
 
@@ -29,6 +31,11 @@ export default function services(state = initialState, action){
             return {
                 ...state,
                 projects: action.payload
+            };
+        case GET_PROJECT:
+            return {
+                ...state,
+                project: action.payload
             };
         case GET_IMAGES:
             return {
