@@ -25,9 +25,7 @@ class PapperBlock extends React.Component {
       <div>
         <Paper className={classNames(classes.root, noMargin && classes.noMargin, colorMode && classes.colorMode)} elevation={0}>
           <div className={classes.descBlock}>
-            <span className={classes.iconTitle}>
-              <GiAbstract022 icon={icon} />
-            </span>
+            
             <div className={classes.titleText}>
               <Typography variant="h6" component="h2" className={classes.title}>
                 {title}

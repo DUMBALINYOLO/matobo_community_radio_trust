@@ -93,14 +93,7 @@ class Header extends React.Component {
               </NavLink>
               <Hidden mdDown>
                 <nav>
-                  <Button
-                    color="inherit"
-                    className=" px-4 py-2 text-capitalize"
-                    component={Link}
-                    to='/about'
-                  >
-                    <span style={{color: '#689F38'}}>ABOUT US</span>
-                  </Button>
+
                   <Button
                     color="inherit"
                     className=" px-4 py-2 text-capitalize"
@@ -133,7 +126,7 @@ class Header extends React.Component {
                   >
                     <span style={{color: '#689F38'}}>VOLUNTEER</span>
                   </Button>
-                  
+
                   <Button
                     color="inherit"
                     className=" px-4 py-2 text-capitalize"
@@ -142,7 +135,7 @@ class Header extends React.Component {
                   >
                     <span style={{color: '#689F38'}}>CONTACT US</span>
                   </Button>
-                  
+
                 </nav>
               </Hidden>
             </div>

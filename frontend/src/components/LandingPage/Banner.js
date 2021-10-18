@@ -82,49 +82,23 @@ class Banner extends React.Component {
 
         {!slideMode && <ParallaxDecoStyled />}
         <div className={!slideMode ? classes.container : ''}>
-          <Typography style={{color: '#689F38'}} component="h4" variant="h4" gutterBottom>WELCOME TO MATOBO COMMUNITY RADIO TRUST</Typography>
+          <Typography style={{color: 'gold'}} component="h4" variant="h4" gutterBottom>WELCOME TO MATOBO COMMUNITY RADIO TRUST</Typography>
           <Typography style={{color: 'gold'}} component="p" variant="h5" gutterBottom>
-            A community-based organisation formed in 2020 whose major objective is to 
-            establishing and run a community radio station in Matobo, Mangwe and Brunapeg areas of Zimbabwe
+            We are community-based organisation formed in 2020 whose major objective is to establishing
+            and run a community radio station in Matobo, Mangwe and Brunapeg areas of Zimbabwe.
+            We draw our membership mostly from our community. We welcome all organisations and
+            individuals who abide by our constitution to be associate members.
+            In September 2021, the Broadcasting Authority of Zimbabwe awarded a
+            community broadcasting licence to us and we are now working to establish
+            the envisioned radio station, Bayethe FM ‘The Voice from The Hills’
+            Our radio programming will focus on issues promoting various areas of
+            development for our community, issues affecting various groups, promoting our culture,
+             local community and national news and entertaining our listeners.
+             We are self-funded form our own projects run together with our communities.
+             We are non-partisan and non-political.
           </Typography>
-          <div className={classes.btnArea}>
-            <Link style={{ textDecoration: 'none', color: 'white' }} to="/about-us">
-              <Button
-                size="large"
-                variant="outlined"
-                className={classNames(classes.button, classes.btnLight)}
-                component={Link}
-                to={link.about}
-              >
-                More About Us
-              </Button>
-            </Link>
-            <Button
-              size="large"
-              variant="contained"
-              color="secondary"
-              className={classes.button}
-              component={Link}
-              to={link.about}
-            >
-              Be Part of this Amazing Journey
-            </Button>
-          </div>
-          <div className={classes.previewApp}>
-            <Hidden smDown>
-              <div className={classNames(classes.m2, classes.screen, slideMode ? classes.bottom : '')}>
-                <img src={mat} alt="crm dashboard" />
-              </div>
-            </Hidden>
-            <div className={classNames(classes.m1, classes.screen)}>
-              <img src={mcrt} alt="personal dashboard" />
-            </div>
-            <Hidden smDown>
-              <div className={classNames(classes.m3, classes.screen, slideMode ? classes.bottom : '')}>
-                <img src={bayethe} alt="crypto dashboard" />
-              </div>
-            </Hidden>
-          </div>
+
+
         </div>
       </div>
     );

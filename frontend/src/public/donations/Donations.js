@@ -34,39 +34,40 @@ const Donations = (props) => {
             props.getDonations();
         }
         console.log('mount it!');
-    
+
     }, []);
 
     useEffect(() =>{
         AOS.init({duration : 3000})
-    
+
       }, []);
 
     return (
     <Corporate>
         <div className={classes.root} data-aos="zoom-in-up">
         <Card className="card-box mb-4">
-                            
+
             <div className="p-5">
-                <h1 
+                <h1
                     className="display-4 my-3 font-weight-bold"
                     style={{color: '#689F38', textAlign: 'center'}}
                 >
                     MATOBO COMMUNITY RADIO TRUST DONATIONS
                 </h1>
-                <p 
+                <p
                     className="font-size-lg"
                     style={{color: 'gold'}}
                 >
-                    Matobo Community Radio Trust raises its funds through member contributions
-                    and donations. You can help us tackle our objectives through making donations
-                    listed platforms and links. For more information you can make an enquiry
+                  Our operations are financed by membership fees, income generating projects spread around Matobo.
+                  We also fund ourselves from partnerships with willing public and private organisations and donations.
+                  By making a donation, you are helping us to continue providing this essential service to our
+                  community.
 
                 </p>
-            
+
                 </div>
             </Card>
-            
+
             <Grid
                 container
                 alignItems="flex-start"
@@ -83,33 +84,33 @@ const Donations = (props) => {
                             key={service.id}
                         >
                             <Card className="card-box mb-4" data-aos="flip-up">
-                            
+
                                 <div className="p-5">
-                                <h1 
+                                <h1
                                     className="display-4 my-3 font-weight-bold"
                                     style={{color: '#689F38', textAlign: 'center'}}
                                 >
                                     {service.platform_name}
                                 </h1>
-                                <p 
+                                <p
                                     className="font-size-lg"
                                     style={{color: 'gold'}}
                                 >
                                     {service.organization_link}
                                 </p>
-                                <h1 
+                                <h1
                                     className="display-4 my-3 font-weight-bold"
                                     style={{color: '#689F38', textAlign: 'center'}}
                                 >
                                     OUR REQUEST
                                 </h1>
-                                <p 
+                                <p
                                     className="font-size-sm mb-3"
                                     style={{color: 'gold'}}
                                 >
                                     {service.donation_request_message}
                                 </p>
-                                
+
                                 </div>
                         </Card>
                     </Grid>
@@ -127,7 +128,7 @@ const Donations = (props) => {
 const mapStateToProps = state =>({
     records: state.donations.donations,
   })
-  
+
 const MappedServices = connect(
   mapStateToProps,
   {getDonations} )

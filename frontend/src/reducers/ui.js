@@ -16,7 +16,7 @@ import {
 
 const initialState = {
   /* Settings for Themes and layout */
-  theme: 'pinkGreenTheme',
+  theme: 'cyanTheme',
   direction: 'ltr',
   type: 'dark', // light or dark
   gradient: true, // true or false
@@ -46,7 +46,7 @@ const initialState = {
 
   pageLoaded: false,
   sidebarOpen: true,
- 
+
 };
 
 
@@ -67,7 +67,7 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         sidebarOpen: state.sidebarOpen
       };
-      
+
     case CHANGE_RANDOM_THEME:
       return {
         ...state,
@@ -81,7 +81,7 @@ export default function reducer(state = initialState, action = {}) {
     case CHANGE_MODE:
       return {
         ...state,
-        type: action.payload,  
+        type: action.payload,
       };
     case CHANGE_GRADIENT:
       return {
@@ -101,7 +101,7 @@ export default function reducer(state = initialState, action = {}) {
     case CHANGE_LAYOUT:
       return  {
         ...state,
-        layout: action.payload 
+        layout: action.payload
       };
     case CHANGE_DIRECTION:
       return  {

@@ -19,25 +19,11 @@ class HomePage extends React.Component {
         <section id="showcase">
           <Feature />
         </section>
-        <section id="principles">
-          <ShowCase />
-        </section>
-        <section id="testimonials">
-          <Testimonials />
-        </section>
 
-        <section id="testicles">
-          <ServivesOne />
-        </section>
-        <section id="luka">
-          <ServicesTwo />
-        </section>
         <section id="faqs">
           <HelpSupport />
         </section>
-        <section id="contact">
-          <Contact />
-        </section>
+
       </div>
     );
   }
