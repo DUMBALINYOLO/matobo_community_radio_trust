@@ -88,7 +88,6 @@ class Header extends React.Component {
           <div className={classes.container}>
             <div className={classes.spaceContainer}>
               <NavLink to="/" className={classes.brand}>
-                <img src={logo} alt={brand.name} />
                 <span style={{color: '#689F38'}}>MATOBO COMMUNITY RADIO TRUST</span>
               </NavLink>
               <Hidden mdDown>

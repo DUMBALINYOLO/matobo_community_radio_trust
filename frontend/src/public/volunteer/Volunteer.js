@@ -40,7 +40,7 @@ function Volunteer(props) {
                         <h1 style={{color: '#689F38', textAlign: 'center'}}>
                             VOLUNTEER WITH MATOBO COMMUNITY RADIO TRUST
                         </h1>
-                        <p className="font-size-lg" style={{color: 'gold'}}>
+                        <p className="font-size-lg" >
                           Join our team and contribute positively to development of our community and the Matobo
                           Community Radio Trust by volunteering with us. Upcoming opportunities at Bayethe FM include
                           program production, radio presenters, news readers, ward news reporters, administration staff and
@@ -64,7 +64,7 @@ function Volunteer(props) {
                                     Contributions
                                 </h1>
                                 </h3>
-                                <p className=" mb-3" style={{color: 'gold'}}>
+                                <p className=" mb-3" >
                                     It takes a Community to raise a child
                                 </p>
                             </div>
@@ -74,7 +74,7 @@ function Volunteer(props) {
                                 <h1 style={{color: '#689F38', textAlign: 'center'}}>
                                     Skills
                                 </h1>
-                                <p className=" mb-3"style={{color: 'gold', textAlign: 'center'}}>
+                                <p className=" mb-3"style={{ textAlign: 'center'}}>
                                     You can Volunteer with any skill for all we need
                                     is your support
                                 </p>
@@ -85,7 +85,7 @@ function Volunteer(props) {
                             <h1 style={{color: '#689F38', textAlign: 'center'}}>
                                     Contributions
                                 </h1>
-                                <p className=" mb-3" style={{color: 'gold', textAlign: 'center'}}>
+                                <p className=" mb-3" style={{ textAlign: 'center'}}>
                                     Check about donations in the Donations Page
                                 </p>
                             </div>
@@ -97,7 +97,7 @@ function Volunteer(props) {
                                     Gratitude
                                 </h1>
                                 </h3>
-                                <p className="mb-3" style={{color: 'gold', textAlign: 'center'}}>
+                                <p className="mb-3" style={{ textAlign: 'center'}}>
                                     We are grateful for those who continue to volunteer with us
                                     may you continue to selflessly give us your hands as we
                                     take this journey

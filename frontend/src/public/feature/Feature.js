@@ -20,12 +20,10 @@ export default function LivePreviewExample() {
         <Container className="py-5">
           <Grid item xl={7} md={9} className="px-0">
             <h1 className="display-3 mb-3 font-weight-bold" style={{textAlign: 'center', color: '#689F38'}}>
-              OUR VISION
+
             </h1>
             <p className="font-size-lg " style={{textAlign: 'center', color: 'gold'}}>
-              To promote various areas of development for our
-              community, issues affecting various groups, promoting our culture,
-               local community and national news and entertaining our listeners
+
             </p>
           </Grid>
           <Grid container spacing={4}>
@@ -35,11 +33,9 @@ export default function LivePreviewExample() {
                   <div className="feature-box mb-4 pr-4">
                     <h3 className="font-size-lg font-weight-bold my-3">
                     <h1 className="display-3 mb-3 font-weight-bold" style={{textAlign: 'center', color: '#689F38'}}>
-                        OUR MISSION
                     </h1>
                     </h3>
                     <p className=" mb-3" style={{textAlign: 'center', color: 'gold'}}>
-                        TO REACH OUT TO OUR COMMUNITIES
                     </p>
                   </div>
 

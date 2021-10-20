@@ -82,8 +82,8 @@ class Banner extends React.Component {
 
         {!slideMode && <ParallaxDecoStyled />}
         <div className={!slideMode ? classes.container : ''}>
-          <Typography style={{color: 'gold'}} component="h4" variant="h4" gutterBottom>WELCOME TO MATOBO COMMUNITY RADIO TRUST</Typography>
-          <Typography style={{color: 'gold'}} component="p" variant="h5" gutterBottom>
+          <Typography style={{color: 'white', fontWeight: 'bold', fontFamily: 'Helvetica'}} component="h4" variant="h4" gutterBottom>WELCOME TO MATOBO COMMUNITY RADIO TRUST</Typography>
+          <p style={{fontFamily: 'Helvetica', paddingBottom: '70px'}} gutterBottom >
             We are community-based organisation formed in 2020 whose major objective is to establishing
             and run a community radio station in Matobo, Mangwe and Brunapeg areas of Zimbabwe.
             We draw our membership mostly from our community. We welcome all organisations and
@@ -96,9 +96,7 @@ class Banner extends React.Component {
              local community and national news and entertaining our listeners.
              We are self-funded form our own projects run together with our communities.
              We are non-partisan and non-political.
-          </Typography>
-
-
+          </p>
         </div>
       </div>
     );

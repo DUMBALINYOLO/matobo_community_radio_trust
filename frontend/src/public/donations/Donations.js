@@ -59,7 +59,7 @@ function Donations(props) {
           <h1 style={{color: '#0B5345'}} className="display-4 mb-3 font-weight-bold" data-aos="flip-up">
             HELP US TO SURVIVE
           </h1>
-          <p style={{color: 'gold'}} className="font-size-lg" data-aos="flip-up">
+          <p  className="font-size-lg" data-aos="flip-up">
             Our operations are financed by membership fees, income generating projects spread around Matobo.
             We also fund ourselves from partnerships with willing public and private organisations and donations.
             By making a donation, you are helping us to continue providing this essential service to our

@@ -25,13 +25,13 @@ class Qna extends React.Component {
     const { expanded } = this.state;
 
     return (
-      <PapperBlock title="ABOUT US"  whiteBg desc="KNOW MORE ABOUT MATOBO COMMUNITY RADIO TRUST">
+      <PapperBlock title="ABOUT US"  whiteBg>
         <ExpansionPanel expanded={expanded === 'panel2'} onChange={this.handleChange('panel2')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
             <Typography style={{color: '#689F38'}} className=' card-box-hover-rise' >Who we are and what we do?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography style={{color: 'gold'}}>
+            <Typography >
               We are a registered community-based organisation (Trust) operating in the Matobo district,
               Matabeleland South province in Zimbabwe. We are licenced by the Broadcasting Authority of
               Zimbabwe in terms of the Broadcasting Act to operate a community radio station, Bayethe FM
@@ -43,10 +43,10 @@ class Qna extends React.Component {
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography style={{color: '#689F38'}} className=' card-box-hover-rise'>Our Objectives</Typography>
+            <Typography style={{color: '#689F38'}}   className=' card-box-hover-rise'>Our Objectives</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography style={{color: 'gold'}}>
+            <Typography>
               <p>
                 We aim among other objectives, to be a source of local and national news, highlight our culture and
                 arts, promote unity, provide entertainment, promote business and tourism, give career and social
