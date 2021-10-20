@@ -103,6 +103,7 @@ const darkPalette = {
         dark: '#00695C',
         contrastText: '#fff',
       },
+
       secondary: {
         light: '#F1F8E9',
         main: '#689F38',
@@ -247,7 +248,7 @@ const darkPalette = {
         dark: '#33691E',
         contrastText: '#fff',
       },
-      
+
       secondary: {
         light: '#FCE4EC',
         main: '#FF334F',

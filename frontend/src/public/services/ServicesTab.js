@@ -32,7 +32,7 @@ const styles = theme => ({
     root: {
         flexGrow: 1,
         width: '100%',
-        paddingTop: '40px',
+        paddingTop: '100px',
         backgroundColor: theme.palette.background.paper,
     },
     tabs: {
@@ -55,7 +55,7 @@ const ScrollIconTabs = (props) => {
             props.getProjects();
         }
         console.log('mount it!');
-    
+
       }, []);
 
     const handleChange = (event, value) => {
@@ -81,7 +81,7 @@ const ScrollIconTabs = (props) => {
                     </Tabs>
                 </AppBar>
                 {value === 0 && <TabContainer><Services records={records}/></TabContainer>}
-                
+
             </div>
         </Corporate>
     );
@@ -94,7 +94,7 @@ ScrollIconTabs.propTypes = {
 const mapStateToProps = state =>({
     records: state.services.projects,
   })
-  
+
 const MappedServices = connect(
   mapStateToProps,
   {getProjects} )

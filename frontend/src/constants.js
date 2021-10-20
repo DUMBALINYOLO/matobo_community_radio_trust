@@ -1,5 +1,5 @@
 const localhost = "https://baridzi.pythonanywhere.com"
-
+// const localhost = "http://localhost:8000"
 
 const apiURL = "/api"
 

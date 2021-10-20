@@ -24,7 +24,7 @@ function Volunteer(props) {
 
     useEffect(() =>{
         AOS.init({duration : 3000})
-    
+
       }, []);
 
 
@@ -41,8 +41,14 @@ function Volunteer(props) {
                             VOLUNTEER WITH MATOBO COMMUNITY RADIO TRUST
                         </h1>
                         <p className="font-size-lg" style={{color: 'gold'}}>
-                            Help us develop and achive our objectives. You can come
-                            and volunteer with Matobo Community Radio Trust
+                          Join our team and contribute positively to development of our community and the Matobo
+                          Community Radio Trust by volunteering with us. Upcoming opportunities at Bayethe FM include
+                          program production, radio presenters, news readers, ward news reporters, administration staff and
+                          more other areas within our projects. Once brought on board, you will be given optimal training
+                          where such is necessary in order to carry out your voluntary task. In some instances, the trust may
+                          reimburse travelling and subsistence costs where such is considered necessary. This will be
+                          highlighted prior to a volunteer taking up a task. Please complete this form and send us your details
+                          highlighting your skills and experience if you have any.
                         </p>
                         </div>
                         <div className="d-block mt-4">
@@ -93,7 +99,7 @@ function Volunteer(props) {
                                 </h3>
                                 <p className="mb-3" style={{color: 'gold', textAlign: 'center'}}>
                                     We are grateful for those who continue to volunteer with us
-                                    may you continue to selflessly give us your hands as we 
+                                    may you continue to selflessly give us your hands as we
                                     take this journey
                                 </p>
                             </div>

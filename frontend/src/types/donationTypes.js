@@ -1,1 +1,2 @@
 export const GET_DONATIONS = 'GET_DONATIONS';
+export const ADD_DONATION = "ADD_DONATION";

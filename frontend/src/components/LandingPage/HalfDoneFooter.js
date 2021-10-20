@@ -62,14 +62,7 @@ class Footer extends React.Component {
                 <span style={{color: '#689F38'}}>MATOBO COMMUNITY RADIO TRUST</span>
             </div>
             <nav>
-            <Button
-                    color="inherit"
-                    className=" px-4 py-2 text-capitalize"
-                    component={Link}
-                    to='/about'
-                  >
-                    <span style={{color: '#689F38'}}>ABOUT US</span>
-                  </Button>
+
                   <Button
                     color="inherit"
                     className=" px-4 py-2 text-capitalize"
@@ -115,8 +108,8 @@ class Footer extends React.Component {
         </div>
         <div className={classes.copyright}>
           <div className={classes.container}>
-            <p>&copy; 2021 MATOBO COMMUNITY RADIO TRUST </p>
-            <p>&copy; developed by @nkolowadumbalinyolo @flexiblemeasurement&controlsystems </p>
+            <p style={{color: '#689F38'}}>&copy; 2021 MATOBO COMMUNITY RADIO TRUST </p>
+            <p style={{color: '#689F38'}}>&copy; developed by @nkolowadumbalinyolo @flexiblemeasurement&controlsystems </p>
             <span>
               <IconButton color="primary" className={classes.button} href={link.twitter} target="_blank"><i className="ion-social-twitter" /></IconButton>
               <IconButton color="primary" className={classes.button} href={link.pinterest} target="_blank"><i className="ion-social-pinterest" /></IconButton>

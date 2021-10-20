@@ -28,6 +28,7 @@ const initialState = {
     { name: 'Ocean Sky', value: 'skyBlueTheme' },
     { name: 'Purple', value: 'purpleRedTheme' },
     { name: 'Rose Gold', value: 'magentaTheme' },
+
     { name: 'Leaf', value: 'cyanTheme' },
     { name: 'Mint', value: 'blueCyanTheme' },
     { name: 'Ubuntu', value: 'orangeTheme' },

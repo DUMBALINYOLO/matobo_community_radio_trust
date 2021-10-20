@@ -67,7 +67,9 @@ class Contact extends React.Component {
                 <div className={classes.contactBubble}>
                     <Title title="Make an Enquiry" align="left" nomargin />
                     <Typography component="p" className={classes.contactText}>
-                      Adress Suite 2, Astra Complex, 9th Ave, Bulawayo
+                      Matobo Community Radio Trust
+                      Matobo RDC Information Centre
+                      Maphisa
                       0785999229
                       Matobo.trust@gmail.com
                     </Typography>

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {
     GET_DONATIONS,
+    ADD_DONATION,
 
 
 } from '../types/donationTypes';
@@ -20,4 +21,16 @@ export const getDonations = () => dispatch => {
                 payload: res.data
             });
       }).catch(err => dispatch(returnErrors(err.response.data, err.response.status)));
+}
+
+
+// Add
+export const addDonation = (donation) => dispatch => {
+    axios.post(donationsURL, donation)
+        .then(res => {
+            dispatch({
+                type: ADD_DONATION,
+                payload: res.data
+            });
+        }).catch(err => dispatch(returnErrors(err.response.data, err.response.status)));
 }

@@ -1,7 +1,8 @@
 import {
     GET_DONATIONS,
+    ADD_DONATION
 
-    } from '../types/donationTypes';
+  } from '../types/donationTypes';
 
 const initialState = {
     donations: [],
@@ -16,6 +17,11 @@ export default function donations(state = initialState, action){
             return {
                 ...state,
                 donations: action.payload
+            };
+        case ADD_DONATION:
+            return {
+                ...state,
+                donation: [...state.donations, action.payload]
             };
 
         default:

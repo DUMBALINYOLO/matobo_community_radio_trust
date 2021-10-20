@@ -4,12 +4,14 @@ from django.db import models
 
 class Donation(models.Model):
 
-    platform_name = models.CharField(max_length=200)
-    organization_link = models.CharField(max_length=500)
-    donation_request_message = models.TextField()
+    name = models.CharField(max_length=200, blank=True, null=True)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    location = models.CharField(max_length=200, blank=True, null=True)
+    email = models.EmailField(blank=True, null=True)
+    phone_number = models.CharField(max_length=200, blank=True, null=True)
 
 
 
     def __str__(self):
 
-        return self.platform_name
+        return self.name
