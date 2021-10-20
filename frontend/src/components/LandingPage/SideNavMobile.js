@@ -19,25 +19,18 @@ class SideNavMobile extends React.Component {
       closeDrawer
     } = this.props;
 
-    
+
 
     return (
       <div className={classes.drawerInnerMobile}>
         <div className={classes.drawerHeader}>
           <div className={classes.brandBig}>
-            
+
           </div>
         </div>
         <div className={classNames(classes.menuContainer, classes.landingNav, classes.rounded)}>
           <List className={classes.dense} component="nav">
-          <Button
-                color="inherit"
-                className=" px-4 py-2 text-capitalize"
-                component={Link}
-                to='/about'
-              >
-                <span style={{color: '#689F38'}}>ABOUT US</span>
-              </Button>
+
               <Button
                 color="inherit"
                 className=" px-4 py-2 text-capitalize"
@@ -46,14 +39,7 @@ class SideNavMobile extends React.Component {
               >
                 <span style={{color: '#689F38'}}>PROJECTS</span>
               </Button>
-              <Button
-                color="inherit"
-                className=" px-4 py-2 text-capitalize"
-                component={Link}
-                to='/donations'
-              >
-                <span style={{color: '#689F38'}}>DONATIONS</span>
-              </Button>
+
               <Button
                 color="inherit"
                 className=" px-4 py-2 text-capitalize"
@@ -70,7 +56,7 @@ class SideNavMobile extends React.Component {
               >
                 <span style={{color: '#689F38'}}>VOLUNTEER</span>
               </Button>
-              
+
               <Button
                 color="inherit"
                 className=" px-4 py-2 text-capitalize"
@@ -80,11 +66,7 @@ class SideNavMobile extends React.Component {
                 <span style={{color: '#689F38'}}>CONTACT US</span>
               </Button>
           </List>
-          <Typography variant="caption" className={classes.copyright}>
-            &copy; 2021 Matobo Community Radio Trust
-            <br />
-            All Right Reserved
-          </Typography>
+          
         </div>
       </div>
     );

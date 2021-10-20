@@ -63,14 +63,7 @@ class Footer extends React.Component {
             </div>
             <nav>
 
-                  <Button
-                    color="inherit"
-                    className=" px-4 py-2 text-capitalize"
-                    component={Link}
-                    to='/donations'
-                  >
-                    <span style={{color: '#689F38'}}>DONATIONS</span>
-                  </Button>
+                  
                   <Button
                     color="inherit"
                     className=" px-4 py-2 text-capitalize"
