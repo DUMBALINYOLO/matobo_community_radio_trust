@@ -9,82 +9,17 @@ import Typography from '@material-ui/core/Typography';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import { withStyles } from '@material-ui/core/styles';
 import link from '../../api/ui/link';
-import styles from './landingStyle-jss';
+import styles from './blogStyle-jss';
 import bayethe from './bayethe.jpg';
 import mcrt from './mcrt.jpg';
 import mat from './mat.jpg';
+import matobo from './matobo.jpg';
+import ShowcaseCard from '../CardPaper/ShowcaseCard';
 
 
 
-
-
-function ParallaxDeco(props) {
-  const { classes } = props;
-  return (
-    <ParallaxProvider>
-      <div className={classes.bannerParallaxWrap}>
-        <Parallax
-          offsetYMax={10}
-          offsetYMin={-60}
-          slowerScrollRate
-          tag="figure"
-        >
-          <span className={classNames(classes.paralaxFull, classes.lineBanner1)} />
-        </Parallax>
-        <Parallax
-          offsetYMax={15}
-          offsetYMin={-50}
-          slowerScrollRate
-          tag="figure"
-        >
-          <span className={classNames(classes.paralaxFull, classes.lineBanner2)} />
-        </Parallax>
-        <Parallax
-          offsetYMax={70}
-          offsetYMin={-1}
-          slowerScrollRate
-          tag="figure"
-        >
-          <span className={classNames(classes.paralaxFull, classes.petalBanner1)} />
-        </Parallax>
-        <Parallax
-          offsetYMax={60}
-          offsetYMin={-30}
-          slowerScrollRate
-          tag="figure"
-        >
-          <span className={classNames(classes.paralaxFull, classes.petalBanner2)} />
-        </Parallax>
-      </div>
-    </ParallaxProvider>
-  );
-}
-
-ParallaxDeco.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-const ParallaxDecoStyled = withStyles(styles)(ParallaxDeco);
-
-class Banner extends React.Component {
-  render() {
-    const { classes, gradient, slideMode } = this.props;
-    return (
-      <div
-        className={
-          classNames(
-            classes.banner,
-            gradient ? classes.gradient : classes.solid,
-            slideMode ? classes.out : classes.fit
-          )
-        }
-      >
-
-        {!slideMode && <ParallaxDecoStyled />}
-        <div className={!slideMode ? classes.container : ''}>
-          <Typography style={{color: 'white', fontWeight: 'bold', fontFamily: 'Helvetica'}} component="h4" variant="h4" gutterBottom>WELCOME TO MATOBO COMMUNITY RADIO TRUST</Typography>
-          <p style={{fontFamily: 'Helvetica', paddingBottom: '70px'}} gutterBottom >
-            We are community-based organisation formed in 2020 whose major objective is to establishing
+const title = 'WELCOME TO MATOBO COMMUNITY RADIO TRUST'
+const dec = `We are community-based organisation formed in 2020 whose major objective is to establishing\
             and run a community radio station in Matobo, Mangwe and Brunapeg areas of Zimbabwe.
             We draw our membership mostly from our community. We welcome all organisations and
             individuals who abide by our constitution to be associate members.
@@ -95,9 +30,25 @@ class Banner extends React.Component {
             development for our community, issues affecting various groups, promoting our culture,
              local community and national news and entertaining our listeners.
              We are self-funded form our own projects run together with our communities.
-             We are non-partisan and non-political.
-          </p>
-        </div>
+             We are non-partisan and non-political.`
+
+
+
+
+
+class Banner extends React.Component {
+  render() {
+    const { classes, gradient, slideMode } = this.props;
+    return (
+      <div >
+        <ShowcaseCard
+          title={title}
+          desc={dec}
+          action="Read more"
+          image={mat}
+          noMargin
+          extraSize
+        />
       </div>
     );
   }

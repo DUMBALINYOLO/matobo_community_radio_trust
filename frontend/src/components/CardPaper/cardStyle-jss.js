@@ -357,6 +357,7 @@ const styles = theme => ({
   imageFull: {
     position: 'relative',
     width: '100%',
+    height: '500px',
     '&:hover': {
       zIndex: 1,
       '& $imageBackdrop': {
@@ -393,7 +394,7 @@ const styles = theme => ({
     right: 0,
     top: 0,
     bottom: 0,
-    backgroundSize: 'cover',
+    backgroundSize: '500px',
     backgroundPosition: 'center 40%',
   },
   imageBackdrop: {

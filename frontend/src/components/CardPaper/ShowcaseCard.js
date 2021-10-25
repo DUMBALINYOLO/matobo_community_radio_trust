@@ -26,36 +26,27 @@ class ShowcaseCard extends React.Component {
       href
     } = this.props;
     return (
-      <Card className={classNames(noMargin ? classes.gutterBottom : classes.cardMedia, landscape && classes.landscapeCard)}>
+      <Card style={{backgroundColor: '#0B5345'}} className={classNames(noMargin ? classes.gutterBottom : classes.cardMedia, landscape && classes.landscapeCard)}>
         <CardMedia
-          className={
-            classNames(
-              landscape ? classes.roundedThumb : classes.roundedMedia,
-              extraSize ? classes.extraRounded : ''
-            )
-          }
-          image={image}
-          title={title}
-        />
+        >
+        <img src={image} style={{height: '600px', width: '100%'}}/>
+      </CardMedia>
         <CardContent>
-          <Typography noWrap variant="h5">{title}</Typography>
+          <h1 style={{color: 'white', textAlign: 'center', fontWeight: 'bold'}}>{title}</h1>
           {date && (<Typography variant="caption" gutterBottom>{date}</Typography>)}
-          <Typography style={{color: 'gold'}} variant="subtitle1">{desc}</Typography>
+          <Typography style={{color: 'white', textAlign: 'center'}} variant="subtitle1">{desc}</Typography>
           {landscape && (
             <div className={classes.btnArea}>
               <Button size="large" component={Link} to={href} variant="outlined" color="primary">{action}</Button>
             </div>
           )}
         </CardContent>
-        {!landscape && (
-          <CardActions className={classes.btnArea}>
-            <Button size="large" component={Link} to={href} variant="outlined" color="primary">{action}</Button>
-          </CardActions>
-        )}
+
       </Card>
     );
   }
 }
+
 
 ShowcaseCard.propTypes = {
   classes: PropTypes.object.isRequired,

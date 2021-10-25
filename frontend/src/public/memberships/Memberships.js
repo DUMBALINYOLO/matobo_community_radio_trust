@@ -33,10 +33,10 @@ function Memberships(props) {
     <Corporate>
       <div className={classes.root} data-aos="zoom-in-up">
         <div className="text-center my-5" data-aos="flip-up">
-          <h1 style={{color: '#0B5345'}} className="display-4 mb-3 font-weight-bold">
+          <h1 className="display-4 mb-3 font-weight-bold">
             WHY BE A MEMBER?
           </h1>
-          <p  className="font-size-lg" data-aos="flip-up">
+          <p  className="font-size-lg" >
             As a member of the trust, you contribute to the upliftment of our community by making vital
             decisions together with other members on the running and management of the trust and on
             programs broadcast on our radio station, Bayethe FM. You ensure that the goals set by the trust are
@@ -47,10 +47,10 @@ function Memberships(props) {
           </p>
         </div>
         <div className="text-center my-5">
-          <h1 style={{color: '#0B5345'}} className="display-4 mb-3 font-weight-bold" data-aos="flip-up">
+          <h1 className="display-4 mb-3 font-weight-bold" data-aos="flip-up">
             HOW TO BECOME A MEMBER?
           </h1>
-          <p className="font-size-lg" data-aos="flip-up">
+          <p className="font-size-lg" >
             There are four tiers of membership, free, subscriber and associate. By choosing to become a
             member you agree to be bound by our constitution and statutes.
           </p>
@@ -64,7 +64,7 @@ function Memberships(props) {
                 <h2 className="card-title font-weight-bold font-size-lg" data-aos="flip-up" >
                   FREE MEMBERSHIP
                 </h2>
-                <p className="card-text"  data-aos="flip-up">
+                <p className="card-text"  >
                   This membership tier is open to all individuals over the age of 16 and resident in Matobo, Mangwe
                   and Brunapeg. Free members participate in all proceedings at our meeting and annual general
                   meetings but do not vote. A membership card is processed at a fee of $5. You can buy a Bayethe FM
@@ -81,7 +81,7 @@ function Memberships(props) {
                 <h5  data-aos="flip-up" className="card-title font-weight-bold font-size-lg">
                   SUSCRIBER MEMBERSHIP
                 </h5>
-                <p className="card-text"  data-aos="flip-up" >
+                <p className="card-text"   >
                   This membership tier is open to all individuals over the age of 16 and resident in Matobo, Mangwe
                   and Brunapeg and costs USD25 payable in Zimbabwe dollar, Rand or American dollar. Subscriber
                   members participate in all proceedings at our meeting and annual general and vote on decision
@@ -92,13 +92,13 @@ function Memberships(props) {
             </Card>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Card style={{backgroundColor: '#0B5345'}} className="mb-4"data-aos="flip-left" >
+            <Card style={{backgroundColor: '#0B5345'}} className="mb-4" >
               <img alt="..." className="card-img-top" src={mcrt} />
               <CardContent className="p-3">
                 <h5 data-aos="flip-up"  className="card-title font-weight-bold font-size-lg">
                   ASSOCIATIVE MEMBERSHIP
                 </h5>
-                <p className="card-text"  data-aos="flip-up">
+                <p className="card-text" >
                   This membership tier is open to organisations and individuals over the age of 16 who support our
                   objectives and are non-resident in Matobo, Mangwe and Brunapeg. Associate membership costs
                   USD25 for individuals and USD100 for organisations payable in Zimbabwe dollar, Rand or American

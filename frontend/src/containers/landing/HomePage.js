@@ -2,6 +2,7 @@ import React from 'react';
 import Feature from '../../public/feature/Feature';
 import Contact from '../../components/LandingPage/Contact';
 import Hero from '../../components/LandingPage/Banner';
+// import Hero from '../../public/hero/Hero';
 import ServivesOne from '../../public/services/ServicesOne';
 import ServicesTwo from '../../public/services/ServicesTwo';
 import Testimonials from '../../components/LandingPage/Testimonials';
